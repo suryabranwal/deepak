@@ -1,0 +1,269 @@
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: Quicksand, sans-serif;
+      box-sizing: border-box;
+  }
+
+  .container {
+
+      width: 100%;
+      height: 100vh;
+      background-color: #101212;
+      color: white;
+      overflow-x: hidden;
+
+
+  }
+
+  .watch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-size: 100px;
+      padding: 10px;
+
+  }
+
+  .watch div {
+      width: 150px;
+      height: 150px;
+      background-color: #43454344;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 100px;
+      text-align: center;
+      line-height: 130px;
+      text-shadow: 0px 0px 10px #2da8f5,
+          0px 0px 30px #2da8f5,
+          0px 0px 40px #2da8f5,
+          0px 0px 60px #2da8f5,
+          0px 0px 80px #2da8f5,
+          0px 0px 90px #2da8f5;
+
+  }
+
+  .wish {
+      width: 100%;
+      color: white;
+      margin-bottom: 100px;
+      background-color: #101212;
+      overflow: hidden;
+      display: none;
+
+
+  }
+
+  #float {
+      font-size: 70px;
+      position: relative;
+      text-align: center;
+
+  }
+
+
+  .img {
+      height: 100px;
+  }
+
+
+
+
+
+  .firework {
+      width: 100px;
+      height: 100px;
+      animation: burst linear 1s infinite;
+  }
+
+  .firework:nth-child(2) {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+  }
+
+  .firework:nth-child(3) {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+
+  .firework:nth-child(4) {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+  }
+
+  .firework:nth-child(5) {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+  }
+
+  @keyframes burst {
+      0% {
+          transform: scale(0);
+      }
+
+      100% {
+          transform: scale(1.3)
+      }
+  }
+
+  strong {
+      animation: glowfade 1s linear infinite;
+
+  }
+
+  @keyframes glowfade {
+      0% {
+          text-shadow: 0 0 1px #58ccf3,
+              0 0 5px #58ccf3,
+              0 0 10px #58ccf3,
+              0 0 20px #58ccf3,
+              0 0 30px #58ccf3;
+      }
+
+      50% {
+          text-shadow: 0 0 10px #58ccf3,
+              0 0 20px #58ccf3,
+              0 0 30px #58ccf3,
+              0 0 40px #58ccf3,
+              0 0 50px #58ccf3;
+      }
+
+      100% {
+          text-shadow: 0 0 1px #58ccf3,
+              0 0 5px #58ccf3,
+              0 0 10px #58ccf3,
+              0 0 20px #58ccf3,
+              0 0 30px #58ccf3;
+      }
+  }
+
+  #main {
+      width: 40%;
+      height: auto;
+      margin: 50px auto;
+      ;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 0 50px #8158f3;
+  }
+
+
+  #gift {
+      width: 150px;
+      display: block;
+      margin: 100px auto;
+      animation: shake linear .5s infinite;
+
+  }
+
+  #cake {
+      width: 150px;
+      display: block;
+      margin: 100px auto;
+  }
+
+  #float {
+      color: #fff;
+  }
+
+  #msg {
+      width: 300px;
+      height: 380px;
+      color: #222;
+      background-color: #efefef;
+      margin: 100px auto;
+      line-height: 24px;
+      padding: 10px;
+      opacity: 0;
+      transition: linear 1s;
+
+  }
+
+  #crown {
+      width: 160px;
+      display: block;
+      margin: 20px auto;
+      animation: shake linear .8s infinite;
+  }
+
+
+
+  @keyframes shake {
+      0% {
+          transform: rotate(6deg);
+      }
+
+      50% {
+          transform: rotate(-6deg);
+      }
+
+      100% {
+          transform: rotate(6deg);
+      }
+  }
+
+
+
+
+
+  /*media queries*/
+  @media(max-width:450px) {
+      #main {
+          width: 100%;
+          height: auto;
+      }
+
+      #float {
+          font-size: 50px;
+      }
+
+      .firework {
+          width: 60px;
+          height: 60px;
+
+      }
+
+      .watch {
+          font-size: 20px;
+      }
+
+      .watch div {
+          width: 60px;
+          height: 60px;
+          font-size: 50px;
+          line-height: 60px;
+      }
+  }
+
+  @media(min-width:451px) and (max-width:770px) {
+      #main {
+          width: 100%;
+          height: auto;
+      }
+
+      #float {
+          font-size: 60px;
+      }
+
+      .firework {
+          width: 70px;
+          height: 70px;
+
+      }
+
+      .watch {
+          font-size: 40px;
+      }
+
+      .watch div {
+          width: 90px;
+          height: 90px;
+          font-size: 80px;
+          line-height: 90px;
+      }
+  }
