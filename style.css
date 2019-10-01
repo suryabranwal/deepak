@@ -17,7 +17,7 @@
   }
 
   .watch {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       height: 100vh;
@@ -50,7 +50,7 @@
       margin-bottom: 100px;
       background-color: #101212;
       overflow: hidden;
-      display: none;
+      display: block;
 
 
   }
