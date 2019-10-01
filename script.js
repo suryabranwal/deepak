@@ -11,10 +11,10 @@
         $(".time").eq(3).text(min % 10);
         $(".time").eq(4).text(Math.floor(sec / 10));
         $(".time").eq(5).text(sec % 10);
-        if (hr === 00) {
-            $(".watch").css("display", "none");
-            $(".wish").css("display", "block");
-        }
+      
+           
+
+
     }, 1000);
     $("#gift").on("click", function () {
         $("#msg").css("opacity", 1);
